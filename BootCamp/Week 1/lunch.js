@@ -13,9 +13,9 @@
  * in minutes.
  */
 
-function whatToDoForLunch(hungry, availableTime) {
+let whatToDoForLunch = function(hungry, availableTime) {
   if (hungry) {
-    if(availableTime < 20) {
+    if (availableTime < 20) {
       console.log("Pick up your snack or grab something you have ready at home");
     } else if (availableTime >= 20 && availableTime < 30) {
       console.log("You deserve a break and take time to cook a tasty meal");
@@ -25,7 +25,7 @@ function whatToDoForLunch(hungry, availableTime) {
   } else {
     console.log(`I'm not hungry and I have ${availableTime} minutes for lunch.`);
   }
-}
+};
 
 /*
  * This is some test runner code that's simply calling our whatToDoForLunch function
