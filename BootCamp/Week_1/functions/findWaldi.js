@@ -1,0 +1,1 @@
+(["Alice", "Bob", "Waldi", "Winston"]).forEach((name) => console.log(`Found ${name}`));
