@@ -6,7 +6,7 @@ const swapper = function (key1, object1, key2, object2) {
   let tempNumber = 0;
   
   for (const keyOfObject1 in object1) {
-    if (keyOfObject1 === key1) {}
+    if (keyOfObject1 === key1) {
       tempNumber = object1[keyOfObject1];
       for (const keyOfObject2 in object2) {
         if (keyOfObject2 === key2) {
