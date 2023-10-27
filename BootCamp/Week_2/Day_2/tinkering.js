@@ -1,19 +1,5 @@
-const titleCase = (string) => {
-  let words = string.split(" ");
-
-  if (string === "") {
-    return string;
-  }
-
-  for (let i = 0; i < words.length; i++) {
-    words[i] = words[i][0].toUpperCase() + words[i].substr(1).toLowerCase();
-  }
-  console.log(words.join(' '));
-};
-
-titleCase("this is an example"); // should return "This Is An Example"
-titleCase("test"); // should return "Test"
-titleCase("i r cool");  // should return "I R Cool"
-titleCase("WHAT HAPPENS HERE"); // should return "What Happens Here"
-titleCase(""); // should return ""
-titleCase("A"); // should return "A"
+const jsonString = '{"a":1, "b":2, "foo":"bar"}'; // string version of a JS Object
+const obj = JSON.parse(jsonString) // a string, of course :)
+delete obj.foo;
+const newString = JSON.stringify(obj);
+console.log(newString);
